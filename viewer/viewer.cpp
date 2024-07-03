@@ -535,10 +535,18 @@ void Viewer::Run(){
 		return;
 	}
 
+#ifdef __APPLE__
+	const char* glsl_version="#version 330";
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,3);
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,GL_TRUE);
+	glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE);
+#else
 	glfwWindowHint(GLFW_CLIENT_API,GLFW_OPENGL_ES_API);
 	const char* glsl_version="#version 300 es";//#version 130";
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,0);
+#endif
 
 	GLFWwindow* window=glfwCreateWindow(1600,1200,"Plain H264",NULL,NULL);
 	if(!window){

@@ -1082,7 +1082,7 @@ class PlainH264Decoder: public ISVCDecoderBase{
 		uint32_t m_memoryBlockPos;
 };
 
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
 
 void* AllocSystemAligned(int lAlignment,int lSize) {
 	void* pMemory=aligned_alloc(lAlignment,lSize);

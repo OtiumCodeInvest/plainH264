@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h> // memcpy
+#ifndef __APPLE__
 #include <malloc.h>
+#endif
 #include <stdarg.h>
 #include <chrono>
 
