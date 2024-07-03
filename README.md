@@ -41,5 +41,5 @@ $ Open plainH264.sln project in Visual Studio and build
 
 Alternative open as folder
 
-<img width="1165" alt="screenshot-bunny" src="https://github.com/OtiumCodeInvest/H264/assets/98739117/be4be5b1-2ccf-413d-b19d-03427f30fbfb">
+<img width="1165" alt="screenshot-bunny" src="https://github.com/OtiumCodeInvest/plainH264/assets/98739117/02f97424-6e80-4d68-a5d7-e91924d97318">
 
